@@ -1,12 +1,9 @@
 /**
- * @param {number} millis
- * @return {Promise}
+ * @param {number} millis - mili segundos
+ * @return {Promise} - funcao assincrona sleep
  */
-async function sleep(millis) {
-    
-}
 
-/** 
- * let t = Date.now()
- * sleep(100).then(() => console.log(Date.now() - t)) // 100
- */
+millis.setTimeout(() => {
+  let t = Date.now();
+  sleep(100).then(() => console.log(Date.now() - t));
+}, 1000);
